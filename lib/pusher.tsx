@@ -1,6 +1,6 @@
 import PusherServer from 'pusher'
 import PusherClient from 'pusher-js'
-console.log(process.env.NEXT_PUBLIC_PUSHER_APP_KEY)
+
 
 var Pusher = require('pusher')
 

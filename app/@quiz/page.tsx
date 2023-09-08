@@ -41,7 +41,7 @@ export default function Quiz() {
           `https://opentdb.com/api.php?amount=${config.numberOfQuestion}`
         )
       ).json();
-      console.log(results)
+    
       let shuffledResults = results.map((e:questionT) => {
         let value = [...e.incorrect_answers, e.correct_answer]
           .map((value) => ({ value, sort: Math.random() }))
@@ -50,7 +50,7 @@ export default function Quiz() {
         e.answers = [...value];
         return e;
       });
-      console.log(shuffledResults, "shuffeled");
+    
       setQuestions([...shuffledResults]);
       setLoading(false);
     }
@@ -74,7 +74,7 @@ export default function Quiz() {
         attempted: config.attempted,
         userId: config.userId,
       })
-      console.log(data)
+     
 
   }
   useEffect(() => {
@@ -109,7 +109,7 @@ export default function Quiz() {
     remainingQuestions.shift();
     setQuestions([...remainingQuestions]);
     setAnswer("");
-    console.log(answer, "answer");
+   
     sentScore()
   };
 

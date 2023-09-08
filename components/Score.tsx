@@ -20,8 +20,7 @@ const Score = () => {
 
     const scoreHandler = (data: ScoreProps ) => {
     
-        console.log('score', data.score)
-        console.log('attempted', data.attempted)
+     
         setOppScore(data.score)
         setOppAttempted(data.attempted)
 
