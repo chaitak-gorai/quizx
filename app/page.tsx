@@ -9,7 +9,7 @@ export default function Home() {
 {/* //from flowbite */}
 <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">QuizX: Multiplayer Quiz App.</h1>
 <section className='p-10 my-10 rounded-lg shadow-xl w-[65%]'>
-<h3 className="block font-medium text-gray-900" >Directly Create a Quiz or Join Quiz by quizId</h3>
+<h3 className="block font-medium text-gray-900" >Directly Click Create or Join Quiz by giving quizId</h3>
 
 {/* Flowbite? */}
 <InputBox/>

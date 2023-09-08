@@ -126,7 +126,7 @@ useEffect(() => {
     // Show a promise toast until quiz partner is not joined
     var toastId;
     if(!config.quizPartner){
-   toastId=toast.loading('Waiting for your partner to join the quiz')
+   toastId=toast.loading('Waiting for your partner! Share Quiz Id with someone')
     }
    if(config.quizPartner){
     
